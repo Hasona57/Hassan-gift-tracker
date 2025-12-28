@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <div class="content">
+            <img src="https://haxmas.hackclub.com/haxmas-logo.png">
+            <h1>Hassan Gift Tracker!</h1>
+            <img src="images/gifts.jpg">
+            <p>Tracking gifts since 2025</p>
+            <form id="giftForm">
+                <label for="name">First name: </label>
+                <input id="name" type="text" name="name" required>
+                <label for="gift">Gift: </label>
+                <input id="gift" type="text" name="gift" required>
+                <label for="password">Password: </label>
+                <input id="password" type="text" name="password" required>
+                <input type="submit" value="Submit!">
+            </form>
+            <div id="gifts"></div>
+            <div id="notificationModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModal">&times;</span>
+                    <p id="modalMessage"></p>
+                </div>
+            </div>
+            <div id="passwordModal" class="modal">
+                <div class="modal-content">
+                    <span id="closePasswordModal">&times;</span>
+                    <p id="passwordModalMessage">Enter password to mark gift complete:</p>
+                    <input type="password" id="modalPasswordInput" placeholder="Password">
+                    <button id="modalPasswordSubmit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <script src="./main.js" defer></script>
+    </body>
+</html>
