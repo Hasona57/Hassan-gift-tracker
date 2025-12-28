@@ -5,7 +5,7 @@ from flask_limiter.util import get_remote_address
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv() #There is a problem with this when upload to python anywhere make sure to add the path of the .env file which contian the passwords in it as it do not find it auto as in your local laptop so make it something like this load_dotenv("/home/hasona75/Hassan-gift-tracker/.env")
 
 app = flask.Flask(
     __name__,
